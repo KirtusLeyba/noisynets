@@ -2,19 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://kirtusleyba.github.io/noisynets/level_one/</loc>
+    <loc>https://kirtusleyba.github.io/noisynets/level_one/</loc>
   </url><url>
-    <loc>http://kirtusleyba.github.io/noisynets/path-based-observation/</loc>
+    <loc>https://kirtusleyba.github.io/noisynets/path-based-observation/</loc>
   </url><url>
-    <loc>http://kirtusleyba.github.io/noisynets/path-based-observation/route_vector_protocols/</loc>
+    <loc>https://kirtusleyba.github.io/noisynets/path-based-observation/route_vector_protocols/</loc>
   </url><url>
-    <loc>http://kirtusleyba.github.io/noisynets/level_one/source_code/</loc>
+    <loc>https://kirtusleyba.github.io/noisynets/level_one/source_code/</loc>
   </url><url>
-    <loc>http://kirtusleyba.github.io/noisynets/</loc>
+    <loc>https://kirtusleyba.github.io/noisynets/</loc>
     <priority>0</priority>
   </url><url>
-    <loc>http://kirtusleyba.github.io/noisynets/categories/</loc>
+    <loc>https://kirtusleyba.github.io/noisynets/categories/</loc>
   </url><url>
-    <loc>http://kirtusleyba.github.io/noisynets/tags/</loc>
+    <loc>https://kirtusleyba.github.io/noisynets/tags/</loc>
   </url>
 </urlset>

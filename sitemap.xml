@@ -1,20 +1,86 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<?xml-stylesheet type="text/xsl" href="http://localhost:1313/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
   <url>
-    <loc>https://kirtusleyba.github.io/noisynets/level_one/</loc>
-  </url><url>
-    <loc>https://kirtusleyba.github.io/noisynets/path-based-observation/</loc>
-  </url><url>
-    <loc>https://kirtusleyba.github.io/noisynets/path-based-observation/route_vector_protocols/</loc>
-  </url><url>
-    <loc>https://kirtusleyba.github.io/noisynets/level_one/source_code/</loc>
-  </url><url>
-    <loc>https://kirtusleyba.github.io/noisynets/</loc>
-    <priority>0</priority>
-  </url><url>
-    <loc>https://kirtusleyba.github.io/noisynets/categories/</loc>
-  </url><url>
-    <loc>https://kirtusleyba.github.io/noisynets/tags/</loc>
+    <loc>http://localhost:1313/software/path-based-network-observer/</loc>
+    <lastmod>2021-12-06T21:46:26-07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
+  
+  <url>
+    <loc>http://localhost:1313/software/</loc>
+    <lastmod>2021-12-06T21:46:26-07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/software/massively-parallel-expectation-maximization/</loc>
+    <lastmod>2021-12-06T21:45:38-07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/data/</loc>
+    <lastmod>2021-12-06T21:45:03-07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/data/probability-annotated-networks/</loc>
+    <lastmod>2021-12-06T21:45:03-07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/data/positive-graph-records/</loc>
+    <lastmod>2021-12-06T21:44:45-07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/research/bgp-network-inference/</loc>
+    <lastmod>2021-12-06T21:44:18-07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2021-12-06T21:35:45-07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/introduction/</loc>
+    <lastmod>2021-12-06T21:35:45-07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/research/</loc>
+    <lastmod>2021-12-06T21:35:45-07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
 </urlset>

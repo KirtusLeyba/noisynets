@@ -1,27 +1,64 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Noisynets</title>
-    <link>https://kirtusleyba.github.io/noisynets/</link>
-    <description>Recent content on Noisynets</description>
+    <title>Introduction on Noisy Nets</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in Introduction on Noisy Nets</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://kirtusleyba.github.io/noisynets/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Mon, 06 Dec 2021 21:35:45 -0700</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Path Vector Routing</title>
-      <link>https://kirtusleyba.github.io/noisynets/path-based-observation/route_vector_protocols/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Path Based Network Observer</title>
+      <link>http://localhost:1313/software/path-based-network-observer/</link>
+      <pubDate>Mon, 06 Dec 2021 21:46:26 -0700</pubDate>
       
-      <guid>https://kirtusleyba.github.io/noisynets/path-based-observation/route_vector_protocols/</guid>
-      <description>Routing protocols, such as the Border Gateway Protocol (BGP), where paths between regions of IP space are advertised by routers to propogate reachability information. Public data for BGP is collected by route collectors, which gather BGP announcements from various vantage points (VPs). Datasets containing public routing information include paths through Autonomous Systems (ASes).</description>
+      <guid>http://localhost:1313/software/path-based-network-observer/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>Source Code</title>
-      <link>https://kirtusleyba.github.io/noisynets/level_one/source_code/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Massively Parallel Expectation Maximization</title>
+      <link>http://localhost:1313/software/massively-parallel-expectation-maximization/</link>
+      <pubDate>Mon, 06 Dec 2021 21:45:38 -0700</pubDate>
       
-      <guid>https://kirtusleyba.github.io/noisynets/level_one/source_code/</guid>
-      <description>Code Repository The source code for this project includes various tools for observing public routing tables, counting network observations, estimating model parameters for network inference, and handling intermediate data. The entire open source code for the project is available at the github repository.</description>
+      <guid>http://localhost:1313/software/massively-parallel-expectation-maximization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Probability Annotated Networks</title>
+      <link>http://localhost:1313/data/probability-annotated-networks/</link>
+      <pubDate>Mon, 06 Dec 2021 21:45:03 -0700</pubDate>
+      
+      <guid>http://localhost:1313/data/probability-annotated-networks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Positive Graph Records</title>
+      <link>http://localhost:1313/data/positive-graph-records/</link>
+      <pubDate>Mon, 06 Dec 2021 21:44:45 -0700</pubDate>
+      
+      <guid>http://localhost:1313/data/positive-graph-records/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bgp Network Inference</title>
+      <link>http://localhost:1313/research/bgp-network-inference/</link>
+      <pubDate>Mon, 06 Dec 2021 21:44:18 -0700</pubDate>
+      
+      <guid>http://localhost:1313/research/bgp-network-inference/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Introduction</title>
+      <link>http://localhost:1313/introduction/</link>
+      <pubDate>Mon, 06 Dec 2021 21:35:45 -0700</pubDate>
+      
+      <guid>http://localhost:1313/introduction/</guid>
+      <description>This is the landing page for the research project first introduced in the Infocom 2022 paper Cutting Through the Noise to Infer Autonomous System Topology. The project is a collaboration between Arizona State University, the University of Michigan, the University of Vermont, and Princeton University. In this effort, we have applied Bayesian network inference methods popular in many scientific domains to computer networks, namely the Border Gateway Protocol network formed by the links between Autonomous Systems (ASes).</description>
     </item>
     
   </channel>

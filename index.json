@@ -1,0 +1,85 @@
+[
+{
+	"uri": "/software/path-based-network-observer/",
+	"title": "Path Based Network Observer",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/software/",
+	"title": "Softwares",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/software/massively-parallel-expectation-maximization/",
+	"title": "Massively Parallel Expectation Maximization",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/data/",
+	"title": "Data",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/data/probability-annotated-networks/",
+	"title": "Probability Annotated Networks",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/data/positive-graph-records/",
+	"title": "Positive Graph Records",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/research/bgp-network-inference/",
+	"title": "Bgp Network Inference",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/",
+	"title": "Introduction",
+	"tags": [],
+	"description": "",
+	"content": "This is the landing page for the research project first introduced in the Infocom 2022 paper Cutting Through the Noise to Infer Autonomous System Topology. The project is a collaboration between Arizona State University, the University of Michigan, the University of Vermont, and Princeton University. In this effort, we have applied Bayesian network inference methods popular in many scientific domains to computer networks, namely the Border Gateway Protocol network formed by the links between Autonomous Systems (ASes). Our methods focus on inferring accurate network topology in a principled way despite noisy measurement data and a lack of ground truth.\nThis site contains research documentation and results, as well as data and software to enable reproducible research and future experimentation. Key locations are listed below:\n Research Data Software  "
+},
+{
+	"uri": "/introduction/",
+	"title": "Introduction",
+	"tags": [],
+	"description": "",
+	"content": "This is the landing page for the research project first introduced in the Infocom 2022 paper Cutting Through the Noise to Infer Autonomous System Topology. The project is a collaboration between Arizona State University, the University of Michigan, the University of Vermont, and Princeton University. In this effort, we have applied Bayesian network inference methods popular in many scientific domains to computer networks, namely the Border Gateway Protocol network formed by the links between Autonomous Systems (ASes). Our methods focus on inferring accurate network topology in a principled way despite noisy measurement data and a lack of ground truth.\n"
+},
+{
+	"uri": "/research/",
+	"title": "Introduction",
+	"tags": [],
+	"description": "",
+	"content": "This is the landing page for the research project first introduced in the Infocom 2022 paper Cutting Through the Noise to Infer Autonomous System Topology. The project is a collaboration between Arizona State University, the University of Michigan, the University of Vermont, and Princeton University. In this effort, we have applied Bayesian network inference methods popular in many scientific domains to computer networks, namely the Border Gateway Protocol network formed by the links between Autonomous Systems (ASes). Our methods focus on inferring accurate network topology in a principled way despite noisy measurement data and a lack of ground truth.\nThis site contains research documentation and results, as well as data and software to enable reproducible research and future experimentation. Key locations are listed below:\n Research Data Software  "
+},
+{
+	"uri": "/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]

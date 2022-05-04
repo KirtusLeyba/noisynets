@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta name="generator" content="Relearn 3.4.1&#43;tip">
+    <meta name="description" content="">
+    <title>Downloading Paths :: NoisyNets</title>
+    <link href="/noisynets/css/nucleus.css?1651664656" rel="stylesheet">
+    <link href="/noisynets/css/fontawesome-all.min.css?1651664656" rel="stylesheet">
+    <link href="/noisynets/css/featherlight.min.css?1651664656" rel="stylesheet">
+    <link href="/noisynets/css/perfect-scrollbar.min.css?1651664656" rel="stylesheet">
+    <link href="/noisynets/css/auto-complete.css?1651664656" rel="stylesheet">
+    <link href="/noisynets/css/theme.css?1651664656" rel="stylesheet">
+    <link href="/noisynets/css/theme-asu.css?1651664656" rel="stylesheet" id="variant-style">
+    <link href="/noisynets/css/variant.css?1651664656" rel="stylesheet">
+    <link href="/noisynets/css/print.css?1651664656" rel="stylesheet" media="print">
+    <script src="/noisynets/js/variant.js?1651664656"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      var index_url="/noisynets/index.json";
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      // translations
+      window.T_Copy_to_clipboard = 'Copy to clipboard';
+      window.T_Copied_to_clipboard = 'Copied to clipboard!';
+      window.T_Copy_link_to_clipboard = 'Copy link to clipboard';
+      window.T_Link_copied_to_clipboard = 'Copied link to clipboard!';
+      // some further base stuff
+      var baseUriFull='https:\/\/kirtusleyba.github.io\/noisynets/';
+      variants.init( [ 'asu' ] );
+    </script>
+    <script src="/noisynets/js/jquery.min.js?1651664656"></script>
+  </head>
+  <body class="mobile-support" data-url="/noisynets/observation_counting/downloading_paths/">
+    <div id="body" class="default-animation">
+      <div id="sidebar-overlay"></div>
+      <div id="toc-overlay"></div>
+      <nav id="topbar" class="highlightable">
+        <div>
+          <div class="navigation">
+             <a class="nav nav-next" href="/noisynets/observation_counting/counting_edges/" title="Counting Edges"><i class="fas fa-chevron-right fa-fw"></i></a>
+          </div>
+          <div class="navigation">
+             <a class="nav nav-prev" href="/noisynets/observation_counting/" title="Observation Counting"><i class="fas fa-chevron-left fa-fw"></i></a>
+          </div>
+          <div id="breadcrumbs">
+            <span id="sidebar-toggle-span">
+              <a href="#" id="sidebar-toggle" title='Menu'><i class="fas fa-bars fa-fw"></i></a>
+            </span>
+            <span id="toc-menu" title='Table of Contents'><i class="fas fa-list-alt fa-fw"></i></span>
+            <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
+              <meta itemprop="itemListOrder" content="Descending" />
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><meta itemprop="position" content="3" /><a itemprop="item" href="/noisynets/"><span itemprop="name">NoisyNets</span></a> > </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><meta itemprop="position" content="2" /><a itemprop="item" href="/noisynets/observation_counting/"><span itemprop="name">Observation Counting</span></a> > </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><meta itemprop="position" content="1" /><a itemprop="item" href="/noisynets/observation_counting/downloading_paths/" aria-disabled="true"><span itemprop="name">Downloading Paths</span></a></li>
+            </ol>
+          </div>
+          <div class="default-animation progress">
+            <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#requirements">Requirements</a></li>
+  </ul>
+</nav>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main id="body-inner" class="highlightable">
+        <div class="flex-block-wrapper">
+          <div id="head-tags">
+          </div>
+          <article>
+
+<h1>Downloading Paths</h1>
+<p>Downloading paths is accomplished with the <em>bgpobs.py</em> python program provided in <a href="https://github.com/AdaptiveComputationLab/noisynets/blob/main/python_programs/bgpobs.py">source code</a>. Data is downloaded in batches determined by a start and end date. The observations are stored in a data format called a <em>positive graph record</em> or PGR. The PGRs are graph databases representing the union of all edges observed in all paths during data collection. An example execution to collect data from the first day of 2022 is shown here:</p>
+<pre tabindex="0"><code>python bgpobs.py --start 1640995200 --end 1641081600 --dir 2022_01_01_pgrs/0/ --name 2022_01_01
+</code></pre><p>It is useful to make a directory structure for your output PGR files as <code>datasetName/timePeriodIndex</code> where the time period index indicates a distinct time period of sampling the route collectors. Using this convention we can use the helper program <em>pgr_to_bin.py</em> can be used to merge all of the PGR files into a single binary dataset which is useful as it is the input format for the edge counting algorithm in the next chapter of this documentation. If we wanted to convert the PGR files we can run the following command:</p>
+<pre tabindex="0"><code>python pgr_to_bin.py --dir 2022_01_01_pgrs --output_file 2022_01_01_pgrs.bin --T 1
+</code></pre><p>The <code>--T</code> parameter indicates the number of time periods collected.</p>
+<h2 id="requirements">Requirements</h2>
+<p><em>bgpobs.py</em> requires the <strong>pybgpstream</strong> library. The method for installing BGPStream and the python extension is available at <a href="https://bgpstream.caida.org/docs/install">BGP Stream</a>.</p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="sidebar" class="default-animation">
+      <div id="header-wrapper" class="default-animation">
+        <div id="header" class="default-animation">
+<p style="font-size:30px">
+<a href="https://kirtusleyba.github.io/noisynets"><b>NoisyNets</b></a>
+</p>
+
+        </div>
+        <div class="searchbox default-animation">
+          <label for="search-by"><i class="fas fa-search"></i></label>
+          <input data-search-input id="search-by" type="search" placeholder="Search...">
+          <span data-search-clear=""><i class="fas fa-times"></i></span>
+        </div>
+        <script src="/noisynets/js/lunr.min.js?1651664656"></script>
+        <script src="/noisynets/js/auto-complete.js?1651664656"></script>
+        <script src="/noisynets/js/search.js?1651664656"></script>
+      </div>
+      <div id="content-wrapper" class="highlightable">
+        <ul class="topics">
+          <li data-nav-id="/noisynets/observation_counting/" title="Observation Counting" class="dd-item parent"><input type="checkbox" id="section-eff90ce5d2e213812c777baa8b5ed6b1" class="toggle" checked/><label for="section-eff90ce5d2e213812c777baa8b5ed6b1" ></label><a href="/noisynets/observation_counting/"><b>1. </b>Observation Counting</a><ul>
+          <li data-nav-id="/noisynets/observation_counting/downloading_paths/" title="Downloading Paths" class="dd-item active"><a href="/noisynets/observation_counting/downloading_paths/">Downloading Paths</a></li>
+          <li data-nav-id="/noisynets/observation_counting/counting_edges/" title="Counting Edges" class="dd-item"><a href="/noisynets/observation_counting/counting_edges/">Counting Edges</a></li></ul></li>
+          <li data-nav-id="/noisynets/expectation_maximization_algorithm/" title="Expectation Maximization Algorithm" class="dd-item"><input type="checkbox" id="section-3cf4cd0a7e8cb701f6bac370009fab64" class="toggle"/><label for="section-3cf4cd0a7e8cb701f6bac370009fab64" ></label><a href="/noisynets/expectation_maximization_algorithm/"><b>2. </b>Expectation Maximization Algorithm</a><ul>
+          <li data-nav-id="/noisynets/expectation_maximization_algorithm/class_based_em/" title="Class Based EM" class="dd-item"><a href="/noisynets/expectation_maximization_algorithm/class_based_em/">Class Based EM</a></li></ul></li>
+          <li data-nav-id="/noisynets/analysis_tools/" title="Analysis Tools" class="dd-item"><input type="checkbox" id="section-7a8c56322ad93108deaa0f014f598108" class="toggle"/><label for="section-7a8c56322ad93108deaa0f014f598108" ></label><a href="/noisynets/analysis_tools/"><b>3. </b>Analysis Tools</a><ul>
+          <li data-nav-id="/noisynets/analysis_tools/entropy_calculation/" title="Entropy Calculation" class="dd-item"><a href="/noisynets/analysis_tools/entropy_calculation/">Entropy Calculation</a></li>
+          <li data-nav-id="/noisynets/analysis_tools/network_reconstruction_comparisons/" title="Network Reconstruction Comparisons" class="dd-item"><a href="/noisynets/analysis_tools/network_reconstruction_comparisons/">Network Reconstruction Comparisons</a></li>
+          <li data-nav-id="/noisynets/analysis_tools/posterior_predictive_check/" title="Posterior Predictive Check" class="dd-item"><a href="/noisynets/analysis_tools/posterior_predictive_check/">Posterior Predictive Check</a></li></ul></li>
+          <li data-nav-id="/noisynets/publications/" title="Publications" class="dd-item"><input type="checkbox" id="section-4dc6bf08dc3f80517621ba4626edaa83" class="toggle"/><label for="section-4dc6bf08dc3f80517621ba4626edaa83" ></label><a href="/noisynets/publications/"><b>4. </b>Publications</a><ul>
+          <li data-nav-id="/noisynets/publications/bgp/" title="BGP" class="dd-item"><a href="/noisynets/publications/bgp/">BGP</a></li></ul></li>
+          <li data-nav-id="/noisynets/data_and_source_code/" title="Data and Source Code" class="dd-item"><input type="checkbox" id="section-74c47b38d651f5c03136dd8d91922cd0" class="toggle"/><label for="section-74c47b38d651f5c03136dd8d91922cd0" ></label><a href="/noisynets/data_and_source_code/"><b>5. </b>Data and Source Code</a><ul>
+          <li data-nav-id="/noisynets/data_and_source_code/datasets/" title="Datasets" class="dd-item"><a href="/noisynets/data_and_source_code/datasets/">Datasets</a></li>
+          <li data-nav-id="/noisynets/data_and_source_code/public_repository/" title="Public Repository" class="dd-item"><a href="/noisynets/data_and_source_code/public_repository/">Public Repository</a></li></ul></li>
+        </ul>
+        <div class="footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
+        <hr class="default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"/>
+        <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+          <ul>
+            <li id="select-language-container" class="footerLangSwitch">
+              <a class="padding select-container">
+                <i class="fas fa-language fa-fw"></i>
+                <span>&nbsp;</span>
+                <div class="select-style">
+                  <select id="select-language" onchange="location = baseUri + this.value;">
+                  </select>
+                </div>
+                <div class="select-clear"></div>
+              </a>
+            </li>
+            <li id="select-variant-container" class="footerVariantSwitch">
+              <a class="padding select-container">
+                <i class="fas fa-paint-brush fa-fw"></i>
+                <span>&nbsp;</span>
+                <div class="select-style">
+                  <select id="select-variant" onchange="variants.changeVariant( this.value );">
+                    <option id="asu" value="asu" selected>Asu</option>
+                  </select>
+                </div>
+                <div class="select-clear"></div>
+              </a>
+              <script>variants.markSelectedVariant();</script>
+            </li>
+            <li class="footerVisitedLinks"><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+          </ul>
+        </div>
+        <div id="footer" class="footerFooter showFooter">
+	    <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+        </div>
+      </div>
+    </aside>
+    <script src="/noisynets/js/clipboard.min.js?1651664656"></script>
+    <script src="/noisynets/js/perfect-scrollbar.min.js?1651664656"></script>
+    <script src="/noisynets/js/featherlight.min.js?1651664656"></script>
+    <script src="/noisynets/js/theme.js?1651664656"></script>
+  </body>
+</html>

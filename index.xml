@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NoisyNets</title>
+    <link>https://kirtusleyba.github.io/noisynets/</link>
+    <description>Recent content on NoisyNets</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 04 May 2022 00:18:01 -0700</lastBuildDate><atom:link href="https://kirtusleyba.github.io/noisynets/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Observation Counting</title>
+      <link>https://kirtusleyba.github.io/noisynets/observation_counting/</link>
+      <pubDate>Wed, 04 May 2022 00:11:17 -0700</pubDate>
+      <guid>https://kirtusleyba.github.io/noisynets/observation_counting/</guid>
+      <description>Chapter 1 Observation Counting For our network inference we utilize both positive and negative observations of the existence of network edges. This means we must be able to determine what each measurement of an edge says about the existence of that edge.
+In this chapter documentation demonstrates how to download public BGP routing table data to collect paths. Additionaly the edge counting methodology is demonstrated with an example.</description>
+    </item>
+    <item>
+      <title>Expectation Maximization Algorithm</title>
+      <link>https://kirtusleyba.github.io/noisynets/expectation_maximization_algorithm/</link>
+      <pubDate>Wed, 04 May 2022 00:53:24 -0700</pubDate>
+      <guid>https://kirtusleyba.github.io/noisynets/expectation_maximization_algorithm/</guid>
+      <description>Chapter 2 Expectation Maximization Algorithm We have implemented a simple EM algorithm to estimate the most likely parameters to a model of the network, and thus infer the edge probabilities.</description>
+    </item>
+    <item>
+      <title>Analysis Tools</title>
+      <link>https://kirtusleyba.github.io/noisynets/analysis_tools/</link>
+      <pubDate>Wed, 04 May 2022 00:54:18 -0700</pubDate>
+      <guid>https://kirtusleyba.github.io/noisynets/analysis_tools/</guid>
+      <description>Chapter 3 This Chapter is a WIP Analysis Tools Now that we have inferred model parameters we can perform various analyses on the network. We provide the source code for calculating the per node entropy, calculating the precision and recall of a particular network reconstruction, and performing a posterior predictive check with synthetic data.</description>
+    </item>
+    <item>
+      <title>Publications</title>
+      <link>https://kirtusleyba.github.io/noisynets/publications/</link>
+      <pubDate>Wed, 04 May 2022 00:56:44 -0700</pubDate>
+      <guid>https://kirtusleyba.github.io/noisynets/publications/</guid>
+      <description>Chapter 4 Publications </description>
+    </item>
+    <item>
+      <title>Data and Source Code</title>
+      <link>https://kirtusleyba.github.io/noisynets/data_and_source_code/</link>
+      <pubDate>Wed, 04 May 2022 00:56:17 -0700</pubDate>
+      <guid>https://kirtusleyba.github.io/noisynets/data_and_source_code/</guid>
+      <description>Chapter 5 Data and Source Code We provide some sample datasets as well as the source code for this project in an open source repository.</description>
+    </item>
+  </channel>
+</rss>

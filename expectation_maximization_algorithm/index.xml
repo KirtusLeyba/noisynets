@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Expectation Maximization Algorithm on NoisyNets</title>
+    <link>https://kirtusleyba.github.io/noisynets/expectation_maximization_algorithm/</link>
+    <description>Recent content in Expectation Maximization Algorithm on NoisyNets</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 04 May 2022 00:53:24 -0700</lastBuildDate><atom:link href="https://kirtusleyba.github.io/noisynets/expectation_maximization_algorithm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Class Based EM</title>
+      <link>https://kirtusleyba.github.io/noisynets/expectation_maximization_algorithm/class_based_em/</link>
+      <pubDate>Wed, 04 May 2022 00:53:24 -0700</pubDate>
+      <guid>https://kirtusleyba.github.io/noisynets/expectation_maximization_algorithm/class_based_em/</guid>
+      <description>The EM algorithm program can be built similarly to the counting algorithm. Both require UPC++ and boost.
+Once built, the em algorithm can be executed as follows:
+upcxx-run -N 1 -n 20 --class_file 2022_01_01_em_input.bin --init_alpha 0.8 --init_beta 0.2 --init_rho 0.1 --max_iters 100 --output_file em_results.csv The output of this execution will be the inferred alphas and betas for each route collector. Standard output will also read out a few other useful metrics.</description>
+    </item>
+  </channel>
+</rss>

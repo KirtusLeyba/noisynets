@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Observation Counting on NoisyNets</title>
+    <link>https://kirtusleyba.github.io/noisynets/observation_counting/</link>
+    <description>Recent content in Observation Counting on NoisyNets</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 04 May 2022 00:11:17 -0700</lastBuildDate><atom:link href="https://kirtusleyba.github.io/noisynets/observation_counting/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Downloading Paths</title>
+      <link>https://kirtusleyba.github.io/noisynets/observation_counting/downloading_paths/</link>
+      <pubDate>Wed, 04 May 2022 00:12:37 -0700</pubDate>
+      <guid>https://kirtusleyba.github.io/noisynets/observation_counting/downloading_paths/</guid>
+      <description>Downloading paths is accomplished with the bgpobs.py python program provided in source code. Data is downloaded in batches determined by a start and end date. The observations are stored in a data format called a positive graph record or PGR. The PGRs are graph databases representing the union of all edges observed in all paths during data collection. An example execution to collect data from the first day of 2022 is shown here:</description>
+    </item>
+    <item>
+      <title>Counting Edges</title>
+      <link>https://kirtusleyba.github.io/noisynets/observation_counting/counting_edges/</link>
+      <pubDate>Wed, 04 May 2022 00:13:05 -0700</pubDate>
+      <guid>https://kirtusleyba.github.io/noisynets/observation_counting/counting_edges/</guid>
+      <description>To count edges from a PGR file collected from BGP paths we need to determine which observations are positive and negative evidence for the existence of an edge. We apply an assumption that many BGP paths are the shortest path between AS pairs. Of course, this assumption does not hold in general. Despite this, our inference algorithm can account for this error in the false positive rate of the inferred parameters.</description>
+    </item>
+  </channel>
+</rss>
